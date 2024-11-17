@@ -1,20 +1,23 @@
-You’re given a React app that manages a list of tasks. The app has three main functionalities:
+## You’re given a React app that manages a list of tasks. The app has three main functionalities:
 
-Adding a new task.
-Marking a task as complete or incomplete.
-Deleting a task.
-However, there are two issues:
+1. Adding a new task.
+2. Marking a task as complete or incomplete.
+3. Deleting a task.
 
-The "Mark as Complete" functionality is not working correctly.
-The app does not have a "Clear All Completed Tasks" button, which is a feature users have requested.
-Your job is to:
+#### However, there are two issues:
 
-Fix the "Mark as Complete" functionality.
-Implement the "Clear All Completed Tasks" feature.
+1. The "Mark as Complete" functionality is not working correctly.
+2. The app does not have a "Clear All Completed Tasks" button, which is a feature users have requested.
 
+#### Your job is to:
+
+1. Fix the "Mark as Complete" functionality.
+2. Implement the "Clear All Completed Tasks" feature. The button should remove all completed tasks
+
+`
 import React, { useState } from "react";
 
-const TaskApp = () => {
+const OA_1 = () => {
 const [tasks, setTasks] = useState([
 { id: 1, text: "Learn React", completed: false },
 { id: 2, text: "Build a To-Do App", completed: false },
@@ -44,6 +47,7 @@ setTasks(tasks.filter((task) => task.id !== id));
 };
 
 return (
+
 <div style={{ padding: "20px", maxWidth: "400px", margin: "0 auto" }}>
 <h1>Task Manager</h1>
 <input
@@ -80,4 +84,5 @@ onChange={(e) => setNewTask(e.target.value)}
 );
 };
 
-export default TaskApp;
+export default OA_1;
+`
