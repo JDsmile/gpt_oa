@@ -32,10 +32,10 @@ setNewTask("");
 };
 
 const handleToggleComplete = (id) => {
-// BUG: Marking tasks as complete doesn't work.
+// FIX: this should be done using the immutable approach
 const updatedTasks = tasks.map((task) => {
 if (task.id === id) {
-task.completed = !task.completed; // This mutates the state directly
+task.completed = !task.completed;
 }
 return task;
 });
