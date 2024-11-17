@@ -14,7 +14,7 @@
 1. Fix the "Mark as Complete" functionality.
 2. Implement the "Clear All Completed Tasks" feature. The button should remove all completed tasks
 
-`
+```
 import React, { useState } from "react";
 
 const OA_1 = () => {
@@ -85,4 +85,4 @@ onChange={(e) => setNewTask(e.target.value)}
 };
 
 export default OA_1;
-`
+```
