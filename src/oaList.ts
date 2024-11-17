@@ -1,5 +1,4 @@
-import OA_1 from "./OA_1/OA_1";
-import OA_2 from "./OA_2/OA_2";
+import { OA_1, OA_2, OA_3 } from "./index";
 const oaList = [
   {
     name: "OA 1",
@@ -10,6 +9,11 @@ const oaList = [
     name: "OA 2",
     link: "/oa-2",
     component: OA_2,
+  },
+  {
+    name: "OA 3",
+    link: "/oa-3",
+    component: OA_3,
   },
 ];
 
